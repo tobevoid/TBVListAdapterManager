@@ -11,9 +11,10 @@
 #import <Foundation/Foundation.h>
 
 @class TBVListItem;
+NS_SWIFT_NAME(ListCellProtocol)
 @protocol TBVListCellProtocol <NSObject>
 @required
-- (void)configureWithItem:(TBVListItem *)item;
+- (void)configureItem:(TBVListItem *)item;
 @end
 
 #endif /* TBVListCellProtocol_h */

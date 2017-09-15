@@ -21,7 +21,7 @@
     if (self = [super init]) {
         _mItems = [NSMutableArray array];
         if (item) {
-            [_mItems addObject:item];
+            [self addItem:item];
         }
         
         self.supplementaryViewSource = self;
@@ -65,7 +65,7 @@
     
     UICollectionViewCell <TBVListCellProtocol> *cell = [self.collectionContext dequeueReusableCellOfClass:cellClass forSectionController:self atIndex:index];
     
-    [cell configureWithItem:item];
+    [cell configureItem:item];
     
     return cell;
 }
