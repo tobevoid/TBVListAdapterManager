@@ -14,7 +14,7 @@
 NS_SWIFT_NAME(ListCellProtocol)
 @protocol TBVListCellProtocol <NSObject>
 @required
-- (void)configureItem:(TBVListItem *)item;
+- (void)configureItem:(__kindof TBVListItem *)item;
 @end
 
 #endif /* TBVListCellProtocol_h */

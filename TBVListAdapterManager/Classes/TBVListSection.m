@@ -84,13 +84,43 @@
     bunch->_associatedSection = self;
     [self.mItemBunches addObject:bunch];
 }
+    
+- (void)insertItemBunch:(TBVListItemBunch *)bunch atIndex:(NSInteger)index {
+    NSParameterAssert(bunch);
+    
+    bunch->_bunchViewSource = self;
+    if (self.mItemBunches.count > 1 && index > self.mItemBunches.count) {
+        self.mItemBunches.lastObject->_bunchViewSource = nil;
+    }
+    
+    bunch->_associatedSection = self;
+    [self.mItemBunches insertObject:bunch atIndex:index];
+}
 
+
+- (void)addItemBunches:(NSArray<TBVListItemBunch *> *)objects {
+    for (TBVListItemBunch *object in objects) {
+        [self addItemBunch:object];
+    }
+}
+    
 - (void)removeItemBunch:(TBVListItemBunch *)bunch {
     NSParameterAssert(bunch);
     
     [self.mItemBunches removeObject:bunch];
 }
+    
+- (void)removeAllItemBunches {
+    [self.mItemBunches removeAllObjects];
+}
 
+- (void)removeAll {
+    for (TBVListItemBunch *bunch in self.mItemBunches) {
+        [bunch removeAllItems];
+    }
+    [self.mItemBunches removeAllObjects];
+}
+    
 - (void)reload {
     [self.associatedManager.adapter reloadObjects:self.mItemBunches];
 }

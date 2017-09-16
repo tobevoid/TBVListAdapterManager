@@ -28,7 +28,9 @@ NS_SWIFT_NAME(ListAdapterManager)
 - (instancetype)initWithAdapter:(nonnull IGListAdapter *)adapter emptyView:(nullable UIView *)emptyView;
 
 - (void)addSection:(nonnull TBVListSection *)section;
-- (void)deleteSection:(nonnull TBVListSection *)section;
+- (void)removeSection:(nonnull TBVListSection *)section;
+- (void)removeAllSections;
+- (void)removeAll;
 
 - (void)registerItem:(nonnull Class)item withCell:(nonnull Class)cell;
 - (void)registerItems:(nonnull NSArray <Class> *)items;

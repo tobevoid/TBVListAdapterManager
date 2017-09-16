@@ -36,7 +36,10 @@ NS_SWIFT_NAME(ListItemBunch)
 - (instancetype)initWithItem:(nullable TBVListItem *)item;
 
 - (void)addItem:(nonnull TBVListItem *)item;
+- (void)addItems:(nonnull NSArray <TBVListItem *> *)items;
+- (void)insertItem:(nonnull TBVListItem *)item atIndex:(NSInteger)index;
 - (void)removeItem:(nonnull TBVListItem *)item;
+- (void)removeAllItems;
 
 - (void)reload;
 - (void)reloadAnimated:(BOOL)animated;

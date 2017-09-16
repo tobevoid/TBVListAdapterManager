@@ -99,10 +99,29 @@
     [self.mItems addObject:item];
 }
 
+- (void)insertItem:(TBVListItem *)item atIndex:(NSInteger)index {
+    NSParameterAssert(item);
+    
+    item->_associatedBunch = self;
+    [self.mItems insertObject:item atIndex:index];
+}
+    
+- (void)addItems:(NSArray<TBVListItem *> *)items {
+    NSParameterAssert(items);
+    
+    for (TBVListItem *item in items) {
+        [self addItem:item];
+    }
+}
+
 - (void)removeItem:(TBVListItem *)item {
     NSParameterAssert(item);
     
     [self.mItems removeObject:item];
+}
+
+- (void)removeAllItems {
+    [self.mItems removeAllObjects];
 }
 
 - (void)reloadAnimated:(BOOL)animated completion:(void (^)(BOOL finished))completion {

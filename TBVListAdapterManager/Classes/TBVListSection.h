@@ -29,7 +29,11 @@ NS_SWIFT_NAME(ListSection)
 @property (nullable, strong, nonatomic) TBVListSectionConfiguration *footerConfiguration;
 
 - (void)addItemBunch:(nonnull TBVListItemBunch *)bunch;
+- (void)addItemBunches:(nonnull NSArray <TBVListItemBunch *> *)objects;
+- (void)insertItemBunch:(nonnull TBVListItemBunch *)bunch atIndex:(NSInteger)index;
 - (void)removeItemBunch:(nonnull TBVListItemBunch *)bunch;
+- (void)removeAllItemBunches;
+- (void)removeAll;
 
 - (void)reload;
 @end

@@ -55,10 +55,21 @@
     [self.mSections addObject:section];
 }
 
-- (void)deleteSection:(TBVListSection *)section {
+- (void)removeSection:(TBVListSection *)section {
     NSParameterAssert(section);
     
     [self.mSections removeObject:section];
+}
+
+- (void)removeAllSections {
+    [self.mSections removeAllObjects];
+}
+
+- (void)removeAll {
+    for (TBVListSection *section in self.mSections) {
+        [section removeAll];
+    }
+    [self.mSections removeAllObjects];
 }
 
 - (void)registerItem:(Class)item withCell:(Class)cell {
