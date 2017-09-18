@@ -53,15 +53,23 @@
 }
 
 - (CGSize)sizeForItemAtIndex:(NSInteger)index {
+    TBVListItem *item = self.mItems[index];
+    Class cellClass = NSClassFromString(item.associatedBunch.associatedSection.associatedManager.itemMapping[NSStringFromClass([item class])]);
+    
+    NSAssert(cellClass && [cellClass conformsToProtocol:@protocol(TBVListCellProtocol)], @"can't find cell class for item %@ in %@ which conforms to TBVListCellProtocol", item, self.mItems);
+
+    if ([cellClass respondsToSelector:@selector(sizeForItem:)]) {
+        self.mItems[index].cellSize = [(id <TBVListCellProtocol>)cellClass sizeForItem:item];
+    }
+    
     return self.mItems[index].cellSize;
 }
 
 - (UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index {
     TBVListItem *item = self.mItems[index];
-    
     Class cellClass = NSClassFromString(item.associatedBunch.associatedSection.associatedManager.itemMapping[NSStringFromClass([item class])]);
     
-    NSAssert(cellClass, @"can't find cell class for item %@ in %@", item, self.mItems);
+    NSAssert(cellClass && [cellClass conformsToProtocol:@protocol(TBVListCellProtocol)], @"can't find cell class for item %@ in %@ which conforms to TBVListCellProtocol", item, self.mItems);
     
     UICollectionViewCell <TBVListCellProtocol> *cell = [self.collectionContext dequeueReusableCellOfClass:cellClass forSectionController:self atIndex:index];
     
@@ -81,6 +89,13 @@
     }
 }
 
+//- (TBVListItem *)itemAtIndex:(NSInteger)index {
+//    TBVListItem *item = self.mItems[index];
+//    Class cellClass = NSClassFromString(item.associatedBunch.associatedSection.associatedManager.itemMapping[NSStringFromClass([item class])]);
+//    
+//    NSAssert(cellClass, @"can't find cell class for item %@ in %@", item, self.mItems);
+//    
+//}
 #pragma mark - IGListDiffable
 - (id<NSObject>)diffIdentifier {
     return self;
