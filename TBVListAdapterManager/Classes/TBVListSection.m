@@ -17,13 +17,36 @@
 @implementation TBVListSection
 #pragma mark - init
 - (instancetype)init {
-    if (self = [super init]) {
-        _mItemBunches = [NSMutableArray array];
+    return [self initWithHeaderConfiguration:nil footerConfiguration:nil];
+}
+
+- (instancetype)initWithItemBunch:(TBVListItemBunch *)itemBunch {
+    if (self = [self initWithHeaderConfiguration:nil footerConfiguration:nil]) {
+        if (itemBunch) {
+            [self addItemBunch:itemBunch];
+        }
     }
     
     return self;
 }
 
+- (instancetype)initWithHeaderConfiguration:(TBVListSectionConfiguration *)headerConfiguration {
+    return [self initWithHeaderConfiguration:headerConfiguration footerConfiguration:nil];
+}
+
+- (instancetype)initWithFooterConfiguration:(TBVListSectionConfiguration *)footerConfiguration {
+    return [self initWithHeaderConfiguration:nil footerConfiguration:footerConfiguration];
+}
+
+- (instancetype)initWithHeaderConfiguration:(TBVListSectionConfiguration *)headerConfiguration footerConfiguration:(TBVListSectionConfiguration *)footerConfiguration {
+    if (self = [super init]) {
+        _mItemBunches = [NSMutableArray array];
+        _headerConfiguration = headerConfiguration;
+        _footerConfiguration = footerConfiguration;
+    }
+    
+    return self;
+}
 #pragma mark - TBVListItemBunchViewSource
 - (NSArray<NSString *> *)supportedElementKindsForBunch:(TBVListItemBunch *)bunch {
     NSMutableArray *kinds = [NSMutableArray array];
