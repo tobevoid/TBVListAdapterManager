@@ -37,6 +37,7 @@ NS_SWIFT_NAME(ListSection)
 - (void)addItemBunch:(nonnull TBVListItemBunch *)bunch;
 - (void)addItemBunches:(nonnull NSArray <TBVListItemBunch *> *)objects;
 - (void)insertItemBunch:(nonnull TBVListItemBunch *)bunch atIndex:(NSInteger)index;
+- (void)insertItemBunch:(nonnull TBVListItemBunch *)bunch above:(nullable TBVListItemBunch *)aboveBunch;
 - (void)removeItemBunch:(nonnull TBVListItemBunch *)bunch;
 - (void)removeAllItemBunches;
 - (void)removeAll;

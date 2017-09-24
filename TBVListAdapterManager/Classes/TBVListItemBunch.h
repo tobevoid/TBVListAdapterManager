@@ -34,6 +34,7 @@ NS_SWIFT_NAME(ListItemBunch)
 @property (assign, nonatomic, readonly) NSInteger index;
 
 - (instancetype)initWithItem:(nullable TBVListItem *)item;
+- (instancetype)initWithTopInset:(CGFloat)topInset;
 
 - (void)addItem:(nonnull TBVListItem *)item;
 - (void)addItems:(nonnull NSArray <TBVListItem *> *)items;

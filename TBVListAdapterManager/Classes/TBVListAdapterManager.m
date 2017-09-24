@@ -36,8 +36,7 @@
 #pragma mark - public
 - (void)reloadAnimated:(BOOL)animated completion:(void (^)(BOOL))completion {
     [self prepareForReloading];
-    
-    [self.adapter performUpdatesAnimated:YES completion:nil];
+    [self.adapter performUpdatesAnimated:animated completion:completion];
 }
 
 - (void)reloadAnimated:(BOOL)animated {
@@ -46,6 +45,25 @@
 
 - (void)reload {
     [self reloadAnimated:NO];
+}
+
+- (void)insertSection:(TBVListSection *)section above:(TBVListSection *)aboveSection {
+    NSParameterAssert(section);
+    
+    section->_associatedManager = self;
+    NSInteger index = [self.mSections indexOfObject:aboveSection];
+    if (index == NSNotFound) {
+        [self.mSections addObject:section];
+    } else {
+        [self.mSections insertObject:section atIndex:index];
+    }
+}
+
+- (void)insertSection:(TBVListSection *)section atIndex:(NSUInteger)index {
+    NSParameterAssert(section);
+    
+    section->_associatedManager = self;
+    [self.mSections insertObject:section atIndex:index];
 }
 
 - (void)addSection:(TBVListSection *)section {

@@ -28,6 +28,8 @@ NS_SWIFT_NAME(ListAdapterManager)
 - (instancetype)initWithAdapter:(nonnull IGListAdapter *)adapter emptyView:(nullable UIView *)emptyView;
 
 - (void)addSection:(nonnull TBVListSection *)section;
+- (void)insertSection:(nonnull TBVListSection *)section atIndex:(NSUInteger)index;
+- (void)insertSection:(nonnull TBVListSection *)section above:(nullable TBVListSection *)aboveSection;
 - (void)removeSection:(nonnull TBVListSection *)section;
 - (void)removeAllSections;
 - (void)removeAll;

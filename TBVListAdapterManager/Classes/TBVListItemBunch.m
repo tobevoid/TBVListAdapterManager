@@ -17,6 +17,13 @@
 
 @implementation TBVListItemBunch
 #pragma mark - init
+- (instancetype)initWithTopInset:(CGFloat)topInset {
+    if (self = [self initWithItem:nil]) {
+        self.inset = UIEdgeInsetsMake(topInset, 0, 0, 0);
+    }
+    return self;
+}
+
 - (instancetype)initWithItem:(TBVListItem *)item {
     if (self = [super init]) {
         _mItems = [NSMutableArray array];
@@ -88,14 +95,6 @@
         item.selectBlock(item);
     }
 }
-
-//- (TBVListItem *)itemAtIndex:(NSInteger)index {
-//    TBVListItem *item = self.mItems[index];
-//    Class cellClass = NSClassFromString(item.associatedBunch.associatedSection.associatedManager.itemMapping[NSStringFromClass([item class])]);
-//    
-//    NSAssert(cellClass, @"can't find cell class for item %@ in %@", item, self.mItems);
-//    
-//}
 #pragma mark - IGListDiffable
 - (id<NSObject>)diffIdentifier {
     return self;

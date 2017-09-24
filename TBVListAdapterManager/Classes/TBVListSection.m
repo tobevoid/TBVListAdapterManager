@@ -107,7 +107,18 @@
     bunch->_associatedSection = self;
     [self.mItemBunches addObject:bunch];
 }
+
+- (void)insertItemBunch:(TBVListItemBunch *)bunch above:(TBVListItemBunch *)aboveBunch {
+    NSParameterAssert(bunch);
     
+    NSInteger index = [self.mItemBunches indexOfObject:aboveBunch];
+    if (index == NSNotFound) {
+        [self addItemBunch:bunch];
+    } else {
+        [self insertItemBunch:bunch atIndex:index];
+    }
+}
+
 - (void)insertItemBunch:(TBVListItemBunch *)bunch atIndex:(NSInteger)index {
     NSParameterAssert(bunch);
     
