@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		785F35C53980258683921963 /* libPods-TBVListAdapterManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A56154777B558BE5186FB96 /* libPods-TBVListAdapterManager.a */; };
+		D604DEB61F7943EA005091C9 /* TBVListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D604DEB51F7943EA005091C9 /* TBVListCell.m */; };
 		D63A2F161EF8CE15001765B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A2F151EF8CE15001765B3 /* main.m */; };
 		D63A2F191EF8CE15001765B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A2F181EF8CE15001765B3 /* AppDelegate.m */; };
 		D63A2F1C1EF8CE15001765B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A2F1B1EF8CE15001765B3 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 		5A56154777B558BE5186FB96 /* libPods-TBVListAdapterManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TBVListAdapterManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F7153C2BBCCEC529702FF61 /* Pods-TBVListAdapterManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBVListAdapterManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TBVListAdapterManager/Pods-TBVListAdapterManager.debug.xcconfig"; sourceTree = "<group>"; };
 		BF7019746A4D25EE38C6BDD0 /* Pods-TBVListAdapterManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBVListAdapterManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBVListAdapterManager/Pods-TBVListAdapterManager.release.xcconfig"; sourceTree = "<group>"; };
+		D604DEB41F7943E9005091C9 /* TBVListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListCell.h; sourceTree = "<group>"; };
+		D604DEB51F7943EA005091C9 /* TBVListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListCell.m; sourceTree = "<group>"; };
 		D63A2F111EF8CE15001765B3 /* TBVListAdapterManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBVListAdapterManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63A2F151EF8CE15001765B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D63A2F171EF8CE15001765B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 		D63A2F391EF8CE3F001765B3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D604DEB41F7943E9005091C9 /* TBVListCell.h */,
+				D604DEB51F7943EA005091C9 /* TBVListCell.m */,
 				D63A2F3A1EF8CE3F001765B3 /* TBVListAdapterManager.h */,
 				D63A2F3B1EF8CE3F001765B3 /* TBVListAdapterManager.m */,
 				D63A2F3C1EF8CE3F001765B3 /* TBVListCellProtocol.h */,
@@ -327,6 +332,7 @@
 				D63A2F481EF8CE3F001765B3 /* TBVListSection.m in Sources */,
 				D63A2F1C1EF8CE15001765B3 /* ViewController.m in Sources */,
 				D63A2F191EF8CE15001765B3 /* AppDelegate.m in Sources */,
+				D604DEB61F7943EA005091C9 /* TBVListCell.m in Sources */,
 				D63A2F451EF8CE3F001765B3 /* TBVListAdapterManager.m in Sources */,
 				D63A2F491EF8CE3F001765B3 /* TBVListSectionConfiguration.m in Sources */,
 				D63A2F471EF8CE3F001765B3 /* TBVListItemBunch.m in Sources */,

@@ -9,6 +9,7 @@
 #import "TBVListAdapterManager.h"
 #import "TBVListSection.h"
 #import "TBVListItem.h"
+#import "TBVListCell.h"
 #import "TBVListCellProtocol.h"
 
 @interface TBVListItemBunch () <IGListSupplementaryViewSource>
@@ -78,9 +79,18 @@
     
     NSAssert(cellClass && [cellClass conformsToProtocol:@protocol(TBVListCellProtocol)], @"can't find cell class for item %@ in %@ which conforms to TBVListCellProtocol", item, self.mItems);
     
-    UICollectionViewCell <TBVListCellProtocol> *cell = [self.collectionContext dequeueReusableCellOfClass:cellClass forSectionController:self atIndex:index];
+    TBVListCell <TBVListCellProtocol> *cell = [self.collectionContext dequeueReusableCellOfClass:cellClass forSectionController:self atIndex:index];
+
+    if ([cell isKindOfClass:[TBVListCell class]]) {
+        cell->_collectionView = self.associatedSection.associatedManager.adapter.collectionView;
+        cell->_listItem = item;
+        [cell actionBeforeConfigured];
+        [cell configureItem:item];
+        [cell actionAfterConfigured];
+    } else {
+        [cell configureItem:item];
+    }
     
-    [cell configureItem:item];
     
     return cell;
 }
