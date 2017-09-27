@@ -12,9 +12,21 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s,
   }
 
-  s.source_files = 'TBVListAdapterManager/Classes/*'
+#s.source_files = 'TBVListAdapterManager/Classes/*'
 
   s.ios.deployment_target     = "8.0"
 
-  s.dependency 'IGListKit', '~> 3.0'
+s.subspec 'Core' do |ss|
+ss.dependency 'IGListKit', '~> 3.0'
+ss.source_files = 'TBVListAdapterManager/Core/*'
+ss.public_header_files = 'TBVListAdapterManager/Core/*.h'
+end
+
+s.subspec 'Validator' do |ss|
+ss.dependency 'TBVListAdapterManager/Core'
+ss.source_files = 'TBVListAdapterManager/Validator/*'
+ss.public_header_files = 'TBVListAdapterManager/Validator/*.h'
+end
+
+
 end

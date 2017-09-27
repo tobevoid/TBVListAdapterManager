@@ -15,12 +15,11 @@
 
 #define TBVS(o) [o class] 
 NS_ASSUME_NONNULL_BEGIN
-@class TBVListItemMapping;
 
 __attribute__((objc_subclassing_restricted))
 NS_SWIFT_NAME(ListAdapterManager)
 @interface TBVListAdapterManager : NSObject
-@property (nullable, strong, nonatomic, readonly) NSArray *sections;
+@property (nullable, strong, nonatomic, readonly) NSArray <TBVListSection *> *sections;
 @property (nullable, strong, nonatomic, readonly) IGListAdapter *adapter;
 @property (nullable, strong, nonatomic, readonly) NSDictionary *itemMapping;
 

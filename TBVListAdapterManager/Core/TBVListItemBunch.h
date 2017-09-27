@@ -30,7 +30,7 @@ NS_SWIFT_NAME(ListItemBunch)
 }
 
 @property (nullable, weak, nonatomic, readonly) TBVListSection *associatedSection;
-@property (nullable, strong, nonatomic, readonly) NSArray *items;
+@property (nullable, strong, nonatomic, readonly) NSArray <TBVListItem *> *items;
 @property (assign, nonatomic, readonly) NSInteger index;
 
 - (instancetype)initWithItem:(nullable TBVListItem *)item;

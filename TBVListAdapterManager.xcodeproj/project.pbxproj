@@ -8,7 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		785F35C53980258683921963 /* libPods-TBVListAdapterManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A56154777B558BE5186FB96 /* libPods-TBVListAdapterManager.a */; };
-		D604DEB61F7943EA005091C9 /* TBVListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D604DEB51F7943EA005091C9 /* TBVListCell.m */; };
+		D617CCE81F7B4B89007AE919 /* TBVListValidationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CCE71F7B4B89007AE919 /* TBVListValidationItem.m */; };
+		D617CCEE1F7B5166007AE919 /* TBVListValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CCED1F7B5165007AE919 /* TBVListValidator.m */; };
+		D617CCF11F7B534E007AE919 /* TBVListAdapterManager+Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CCF01F7B534E007AE919 /* TBVListAdapterManager+Validator.m */; };
+		D617CCF41F7B5360007AE919 /* TBVListItemBunch+Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CCF31F7B5360007AE919 /* TBVListItemBunch+Validator.m */; };
+		D617CCF71F7B536F007AE919 /* TBVListSection+Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CCF61F7B536F007AE919 /* TBVListSection+Validator.m */; };
+		D617CCFA1F7B7660007AE919 /* NSError+Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CCF91F7B7660007AE919 /* NSError+Validator.m */; };
+		D617CD0C1F7B8843007AE919 /* TBVListAdapterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CD001F7B882C007AE919 /* TBVListAdapterManager.m */; };
+		D617CD0D1F7B8843007AE919 /* TBVListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CD021F7B882C007AE919 /* TBVListCell.m */; };
+		D617CD0E1F7B8843007AE919 /* TBVListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CD051F7B882C007AE919 /* TBVListItem.m */; };
+		D617CD0F1F7B8843007AE919 /* TBVListItemBunch.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CD071F7B882C007AE919 /* TBVListItemBunch.m */; };
+		D617CD101F7B8843007AE919 /* TBVListSection.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CD091F7B882C007AE919 /* TBVListSection.m */; };
+		D617CD111F7B8843007AE919 /* TBVListSectionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CD0B1F7B882C007AE919 /* TBVListSectionConfiguration.m */; };
+		D617CD141F7B8923007AE919 /* TBVListEmptyValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CD131F7B8923007AE919 /* TBVListEmptyValidator.m */; };
+		D617CD1A1F7B8984007AE919 /* TBVListMagnitudeValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CD191F7B8984007AE919 /* TBVListMagnitudeValidator.m */; };
+		D617CD1D1F7B8993007AE919 /* TBVListLengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CD1C1F7B8993007AE919 /* TBVListLengthValidator.m */; };
+		D617CD201F7B89C8007AE919 /* TBVListMobileValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CD1F1F7B89C8007AE919 /* TBVListMobileValidator.m */; };
+		D617CD231F7B89E3007AE919 /* TBVListIdCardValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CD221F7B89E3007AE919 /* TBVListIdCardValidator.m */; };
 		D63A2F161EF8CE15001765B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A2F151EF8CE15001765B3 /* main.m */; };
 		D63A2F191EF8CE15001765B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A2F181EF8CE15001765B3 /* AppDelegate.m */; };
 		D63A2F1C1EF8CE15001765B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A2F1B1EF8CE15001765B3 /* ViewController.m */; };
@@ -16,11 +32,6 @@
 		D63A2F211EF8CE15001765B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63A2F201EF8CE15001765B3 /* Assets.xcassets */; };
 		D63A2F241EF8CE15001765B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63A2F221EF8CE15001765B3 /* LaunchScreen.storyboard */; };
 		D63A2F2F1EF8CE15001765B3 /* TBVListAdapterManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A2F2E1EF8CE15001765B3 /* TBVListAdapterManagerUITests.m */; };
-		D63A2F451EF8CE3F001765B3 /* TBVListAdapterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A2F3B1EF8CE3F001765B3 /* TBVListAdapterManager.m */; };
-		D63A2F461EF8CE3F001765B3 /* TBVListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A2F3E1EF8CE3F001765B3 /* TBVListItem.m */; };
-		D63A2F471EF8CE3F001765B3 /* TBVListItemBunch.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A2F401EF8CE3F001765B3 /* TBVListItemBunch.m */; };
-		D63A2F481EF8CE3F001765B3 /* TBVListSection.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A2F421EF8CE3F001765B3 /* TBVListSection.m */; };
-		D63A2F491EF8CE3F001765B3 /* TBVListSectionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A2F441EF8CE3F001765B3 /* TBVListSectionConfiguration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +48,43 @@
 		5A56154777B558BE5186FB96 /* libPods-TBVListAdapterManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TBVListAdapterManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F7153C2BBCCEC529702FF61 /* Pods-TBVListAdapterManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBVListAdapterManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TBVListAdapterManager/Pods-TBVListAdapterManager.debug.xcconfig"; sourceTree = "<group>"; };
 		BF7019746A4D25EE38C6BDD0 /* Pods-TBVListAdapterManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBVListAdapterManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBVListAdapterManager/Pods-TBVListAdapterManager.release.xcconfig"; sourceTree = "<group>"; };
-		D604DEB41F7943E9005091C9 /* TBVListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListCell.h; sourceTree = "<group>"; };
-		D604DEB51F7943EA005091C9 /* TBVListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListCell.m; sourceTree = "<group>"; };
+		D617CCE61F7B4B89007AE919 /* TBVListValidationItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListValidationItem.h; sourceTree = "<group>"; };
+		D617CCE71F7B4B89007AE919 /* TBVListValidationItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListValidationItem.m; sourceTree = "<group>"; };
+		D617CCE91F7B4BF2007AE919 /* TBVListValidatorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListValidatorProtocol.h; sourceTree = "<group>"; };
+		D617CCEB1F7B4CDA007AE919 /* TBVListAdapterManager.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = TBVListAdapterManager.podspec; sourceTree = "<group>"; };
+		D617CCEC1F7B5165007AE919 /* TBVListValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListValidator.h; sourceTree = "<group>"; };
+		D617CCED1F7B5165007AE919 /* TBVListValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListValidator.m; sourceTree = "<group>"; };
+		D617CCEF1F7B534E007AE919 /* TBVListAdapterManager+Validator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBVListAdapterManager+Validator.h"; sourceTree = "<group>"; };
+		D617CCF01F7B534E007AE919 /* TBVListAdapterManager+Validator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBVListAdapterManager+Validator.m"; sourceTree = "<group>"; };
+		D617CCF21F7B5360007AE919 /* TBVListItemBunch+Validator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBVListItemBunch+Validator.h"; sourceTree = "<group>"; };
+		D617CCF31F7B5360007AE919 /* TBVListItemBunch+Validator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBVListItemBunch+Validator.m"; sourceTree = "<group>"; };
+		D617CCF51F7B536F007AE919 /* TBVListSection+Validator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBVListSection+Validator.h"; sourceTree = "<group>"; };
+		D617CCF61F7B536F007AE919 /* TBVListSection+Validator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBVListSection+Validator.m"; sourceTree = "<group>"; };
+		D617CCF81F7B7660007AE919 /* NSError+Validator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+Validator.h"; sourceTree = "<group>"; };
+		D617CCF91F7B7660007AE919 /* NSError+Validator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+Validator.m"; sourceTree = "<group>"; };
+		D617CCFF1F7B882C007AE919 /* TBVListAdapterManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListAdapterManager.h; sourceTree = "<group>"; };
+		D617CD001F7B882C007AE919 /* TBVListAdapterManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListAdapterManager.m; sourceTree = "<group>"; };
+		D617CD011F7B882C007AE919 /* TBVListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListCell.h; sourceTree = "<group>"; };
+		D617CD021F7B882C007AE919 /* TBVListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListCell.m; sourceTree = "<group>"; };
+		D617CD031F7B882C007AE919 /* TBVListCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListCellProtocol.h; sourceTree = "<group>"; };
+		D617CD041F7B882C007AE919 /* TBVListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListItem.h; sourceTree = "<group>"; };
+		D617CD051F7B882C007AE919 /* TBVListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListItem.m; sourceTree = "<group>"; };
+		D617CD061F7B882C007AE919 /* TBVListItemBunch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListItemBunch.h; sourceTree = "<group>"; };
+		D617CD071F7B882C007AE919 /* TBVListItemBunch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListItemBunch.m; sourceTree = "<group>"; };
+		D617CD081F7B882C007AE919 /* TBVListSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListSection.h; sourceTree = "<group>"; };
+		D617CD091F7B882C007AE919 /* TBVListSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListSection.m; sourceTree = "<group>"; };
+		D617CD0A1F7B882C007AE919 /* TBVListSectionConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListSectionConfiguration.h; sourceTree = "<group>"; };
+		D617CD0B1F7B882C007AE919 /* TBVListSectionConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListSectionConfiguration.m; sourceTree = "<group>"; };
+		D617CD121F7B8923007AE919 /* TBVListEmptyValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListEmptyValidator.h; sourceTree = "<group>"; };
+		D617CD131F7B8923007AE919 /* TBVListEmptyValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListEmptyValidator.m; sourceTree = "<group>"; };
+		D617CD181F7B8984007AE919 /* TBVListMagnitudeValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListMagnitudeValidator.h; sourceTree = "<group>"; };
+		D617CD191F7B8984007AE919 /* TBVListMagnitudeValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListMagnitudeValidator.m; sourceTree = "<group>"; };
+		D617CD1B1F7B8993007AE919 /* TBVListLengthValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListLengthValidator.h; sourceTree = "<group>"; };
+		D617CD1C1F7B8993007AE919 /* TBVListLengthValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListLengthValidator.m; sourceTree = "<group>"; };
+		D617CD1E1F7B89C8007AE919 /* TBVListMobileValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListMobileValidator.h; sourceTree = "<group>"; };
+		D617CD1F1F7B89C8007AE919 /* TBVListMobileValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListMobileValidator.m; sourceTree = "<group>"; };
+		D617CD211F7B89E3007AE919 /* TBVListIdCardValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListIdCardValidator.h; sourceTree = "<group>"; };
+		D617CD221F7B89E3007AE919 /* TBVListIdCardValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListIdCardValidator.m; sourceTree = "<group>"; };
 		D63A2F111EF8CE15001765B3 /* TBVListAdapterManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBVListAdapterManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63A2F151EF8CE15001765B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D63A2F171EF8CE15001765B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,17 +98,6 @@
 		D63A2F2A1EF8CE15001765B3 /* TBVListAdapterManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBVListAdapterManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63A2F2E1EF8CE15001765B3 /* TBVListAdapterManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListAdapterManagerUITests.m; sourceTree = "<group>"; };
 		D63A2F301EF8CE15001765B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D63A2F3A1EF8CE3F001765B3 /* TBVListAdapterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVListAdapterManager.h; sourceTree = "<group>"; };
-		D63A2F3B1EF8CE3F001765B3 /* TBVListAdapterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVListAdapterManager.m; sourceTree = "<group>"; };
-		D63A2F3C1EF8CE3F001765B3 /* TBVListCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVListCellProtocol.h; sourceTree = "<group>"; };
-		D63A2F3D1EF8CE3F001765B3 /* TBVListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVListItem.h; sourceTree = "<group>"; };
-		D63A2F3E1EF8CE3F001765B3 /* TBVListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVListItem.m; sourceTree = "<group>"; };
-		D63A2F3F1EF8CE3F001765B3 /* TBVListItemBunch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVListItemBunch.h; sourceTree = "<group>"; };
-		D63A2F401EF8CE3F001765B3 /* TBVListItemBunch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVListItemBunch.m; sourceTree = "<group>"; };
-		D63A2F411EF8CE3F001765B3 /* TBVListSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVListSection.h; sourceTree = "<group>"; };
-		D63A2F421EF8CE3F001765B3 /* TBVListSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVListSection.m; sourceTree = "<group>"; };
-		D63A2F431EF8CE3F001765B3 /* TBVListSectionConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVListSectionConfiguration.h; sourceTree = "<group>"; };
-		D63A2F441EF8CE3F001765B3 /* TBVListSectionConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVListSectionConfiguration.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +127,60 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D617CCD41F7B4A2C007AE919 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				D617CCE61F7B4B89007AE919 /* TBVListValidationItem.h */,
+				D617CCE71F7B4B89007AE919 /* TBVListValidationItem.m */,
+				D617CCE91F7B4BF2007AE919 /* TBVListValidatorProtocol.h */,
+				D617CCEC1F7B5165007AE919 /* TBVListValidator.h */,
+				D617CCED1F7B5165007AE919 /* TBVListValidator.m */,
+				D617CCEF1F7B534E007AE919 /* TBVListAdapterManager+Validator.h */,
+				D617CCF01F7B534E007AE919 /* TBVListAdapterManager+Validator.m */,
+				D617CCF21F7B5360007AE919 /* TBVListItemBunch+Validator.h */,
+				D617CCF31F7B5360007AE919 /* TBVListItemBunch+Validator.m */,
+				D617CCF51F7B536F007AE919 /* TBVListSection+Validator.h */,
+				D617CCF61F7B536F007AE919 /* TBVListSection+Validator.m */,
+				D617CCF81F7B7660007AE919 /* NSError+Validator.h */,
+				D617CCF91F7B7660007AE919 /* NSError+Validator.m */,
+				D617CD121F7B8923007AE919 /* TBVListEmptyValidator.h */,
+				D617CD131F7B8923007AE919 /* TBVListEmptyValidator.m */,
+				D617CD181F7B8984007AE919 /* TBVListMagnitudeValidator.h */,
+				D617CD191F7B8984007AE919 /* TBVListMagnitudeValidator.m */,
+				D617CD1B1F7B8993007AE919 /* TBVListLengthValidator.h */,
+				D617CD1C1F7B8993007AE919 /* TBVListLengthValidator.m */,
+				D617CD1E1F7B89C8007AE919 /* TBVListMobileValidator.h */,
+				D617CD1F1F7B89C8007AE919 /* TBVListMobileValidator.m */,
+				D617CD211F7B89E3007AE919 /* TBVListIdCardValidator.h */,
+				D617CD221F7B89E3007AE919 /* TBVListIdCardValidator.m */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		D617CCFE1F7B882C007AE919 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D617CCFF1F7B882C007AE919 /* TBVListAdapterManager.h */,
+				D617CD001F7B882C007AE919 /* TBVListAdapterManager.m */,
+				D617CD011F7B882C007AE919 /* TBVListCell.h */,
+				D617CD021F7B882C007AE919 /* TBVListCell.m */,
+				D617CD031F7B882C007AE919 /* TBVListCellProtocol.h */,
+				D617CD041F7B882C007AE919 /* TBVListItem.h */,
+				D617CD051F7B882C007AE919 /* TBVListItem.m */,
+				D617CD061F7B882C007AE919 /* TBVListItemBunch.h */,
+				D617CD071F7B882C007AE919 /* TBVListItemBunch.m */,
+				D617CD081F7B882C007AE919 /* TBVListSection.h */,
+				D617CD091F7B882C007AE919 /* TBVListSection.m */,
+				D617CD0A1F7B882C007AE919 /* TBVListSectionConfiguration.h */,
+				D617CD0B1F7B882C007AE919 /* TBVListSectionConfiguration.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		D63A2F081EF8CE15001765B3 = {
 			isa = PBXGroup;
 			children = (
+				D617CCEB1F7B4CDA007AE919 /* TBVListAdapterManager.podspec */,
 				D63A2F131EF8CE15001765B3 /* TBVListAdapterManager */,
 				D63A2F2D1EF8CE15001765B3 /* TBVListAdapterManagerUITests */,
 				D63A2F121EF8CE15001765B3 /* Products */,
@@ -115,7 +201,8 @@
 		D63A2F131EF8CE15001765B3 /* TBVListAdapterManager */ = {
 			isa = PBXGroup;
 			children = (
-				D63A2F391EF8CE3F001765B3 /* Classes */,
+				D617CCFE1F7B882C007AE919 /* Core */,
+				D617CCD41F7B4A2C007AE919 /* Validator */,
 				D63A2F171EF8CE15001765B3 /* AppDelegate.h */,
 				D63A2F181EF8CE15001765B3 /* AppDelegate.m */,
 				D63A2F1A1EF8CE15001765B3 /* ViewController.h */,
@@ -144,26 +231,6 @@
 				D63A2F301EF8CE15001765B3 /* Info.plist */,
 			);
 			path = TBVListAdapterManagerUITests;
-			sourceTree = "<group>";
-		};
-		D63A2F391EF8CE3F001765B3 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				D604DEB41F7943E9005091C9 /* TBVListCell.h */,
-				D604DEB51F7943EA005091C9 /* TBVListCell.m */,
-				D63A2F3A1EF8CE3F001765B3 /* TBVListAdapterManager.h */,
-				D63A2F3B1EF8CE3F001765B3 /* TBVListAdapterManager.m */,
-				D63A2F3C1EF8CE3F001765B3 /* TBVListCellProtocol.h */,
-				D63A2F3D1EF8CE3F001765B3 /* TBVListItem.h */,
-				D63A2F3E1EF8CE3F001765B3 /* TBVListItem.m */,
-				D63A2F3F1EF8CE3F001765B3 /* TBVListItemBunch.h */,
-				D63A2F401EF8CE3F001765B3 /* TBVListItemBunch.m */,
-				D63A2F411EF8CE3F001765B3 /* TBVListSection.h */,
-				D63A2F421EF8CE3F001765B3 /* TBVListSection.m */,
-				D63A2F431EF8CE3F001765B3 /* TBVListSectionConfiguration.h */,
-				D63A2F441EF8CE3F001765B3 /* TBVListSectionConfiguration.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		E7D80F642395840E7F1A3D79 /* Pods */ = {
@@ -222,7 +289,7 @@
 		D63A2F091EF8CE15001765B3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = tripleCC;
 				TargetAttributes = {
 					D63A2F101EF8CE15001765B3 = {
@@ -318,7 +385,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -328,15 +395,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D63A2F461EF8CE3F001765B3 /* TBVListItem.m in Sources */,
-				D63A2F481EF8CE3F001765B3 /* TBVListSection.m in Sources */,
+				D617CD0F1F7B8843007AE919 /* TBVListItemBunch.m in Sources */,
+				D617CD0C1F7B8843007AE919 /* TBVListAdapterManager.m in Sources */,
+				D617CCE81F7B4B89007AE919 /* TBVListValidationItem.m in Sources */,
+				D617CD0D1F7B8843007AE919 /* TBVListCell.m in Sources */,
+				D617CD111F7B8843007AE919 /* TBVListSectionConfiguration.m in Sources */,
 				D63A2F1C1EF8CE15001765B3 /* ViewController.m in Sources */,
+				D617CD201F7B89C8007AE919 /* TBVListMobileValidator.m in Sources */,
+				D617CCEE1F7B5166007AE919 /* TBVListValidator.m in Sources */,
+				D617CD231F7B89E3007AE919 /* TBVListIdCardValidator.m in Sources */,
+				D617CD1D1F7B8993007AE919 /* TBVListLengthValidator.m in Sources */,
+				D617CD1A1F7B8984007AE919 /* TBVListMagnitudeValidator.m in Sources */,
+				D617CCFA1F7B7660007AE919 /* NSError+Validator.m in Sources */,
+				D617CCF71F7B536F007AE919 /* TBVListSection+Validator.m in Sources */,
+				D617CD101F7B8843007AE919 /* TBVListSection.m in Sources */,
+				D617CD0E1F7B8843007AE919 /* TBVListItem.m in Sources */,
+				D617CCF11F7B534E007AE919 /* TBVListAdapterManager+Validator.m in Sources */,
 				D63A2F191EF8CE15001765B3 /* AppDelegate.m in Sources */,
-				D604DEB61F7943EA005091C9 /* TBVListCell.m in Sources */,
-				D63A2F451EF8CE3F001765B3 /* TBVListAdapterManager.m in Sources */,
-				D63A2F491EF8CE3F001765B3 /* TBVListSectionConfiguration.m in Sources */,
-				D63A2F471EF8CE3F001765B3 /* TBVListItemBunch.m in Sources */,
 				D63A2F161EF8CE15001765B3 /* main.m in Sources */,
+				D617CCF41F7B5360007AE919 /* TBVListItemBunch+Validator.m in Sources */,
+				D617CD141F7B8923007AE919 /* TBVListEmptyValidator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +466,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -396,7 +476,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -437,7 +521,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -445,7 +531,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
