@@ -11,6 +11,7 @@
 
 @implementation TBVListValidationItem
 - (NSArray<NSError *> *)validate:(TBVListVerifiableGainStrategy)strategy {
+    @throw [NSException exceptionWithName:@"TBVListValidationItem" reason:@"Override the method and invoke 'validate:name:strategy' to gain validation errors" userInfo:nil];
     return nil;
 }
 
@@ -41,7 +42,7 @@
         [errors addObject:error];
     }
     
-    if (errors.count) {
+    if (errors.count > 0) {
         switch (strategy) {
             case TBVListVerifiableGainStrategyAll:
                 return errors;
