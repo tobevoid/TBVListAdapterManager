@@ -28,5 +28,10 @@ ss.source_files = 'TBVListAdapterManager/Validator/*'
 ss.public_header_files = 'TBVListAdapterManager/Validator/*.h'
 end
 
+s.subspec 'Traverser' do |ss|
+ss.dependency 'TBVListAdapterManager/Core'
+ss.source_files = 'TBVListAdapterManager/Traverser/*'
+ss.public_header_files = 'TBVListAdapterManager/Traverser/*.h'
+end
 
 end

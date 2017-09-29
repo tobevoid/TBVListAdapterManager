@@ -28,6 +28,6 @@
             }
         }
     }
-    return array;
+    return array.count > 0 ? array : nil;
 }
 @end

@@ -98,6 +98,15 @@
 		D63A2F2A1EF8CE15001765B3 /* TBVListAdapterManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBVListAdapterManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63A2F2E1EF8CE15001765B3 /* TBVListAdapterManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListAdapterManagerUITests.m; sourceTree = "<group>"; };
 		D63A2F301EF8CE15001765B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D64735C11F7E26A400D9577B /* TBVListAdapterManager+Traverser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBVListAdapterManager+Traverser.h"; sourceTree = "<group>"; };
+		D64735C21F7E26A400D9577B /* TBVListAdapterManager+Traverser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBVListAdapterManager+Traverser.m"; sourceTree = "<group>"; };
+		D64735C31F7E26A400D9577B /* TBVListItem+Traverser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBVListItem+Traverser.h"; sourceTree = "<group>"; };
+		D64735C41F7E26A400D9577B /* TBVListItem+Traverser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBVListItem+Traverser.m"; sourceTree = "<group>"; };
+		D64735C51F7E26A400D9577B /* TBVListItemBunch+Traverser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBVListItemBunch+Traverser.h"; sourceTree = "<group>"; };
+		D64735C61F7E26A400D9577B /* TBVListItemBunch+Traverser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBVListItemBunch+Traverser.m"; sourceTree = "<group>"; };
+		D64735C71F7E26A400D9577B /* TBVListSection+Traverser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBVListSection+Traverser.h"; sourceTree = "<group>"; };
+		D64735C81F7E26A400D9577B /* TBVListSection+Traverser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TBVListSection+Traverser.m"; sourceTree = "<group>"; };
+		D64735C91F7E26A400D9577B /* TBVListTraversableProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListTraversableProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +210,7 @@
 		D63A2F131EF8CE15001765B3 /* TBVListAdapterManager */ = {
 			isa = PBXGroup;
 			children = (
+				D64735C01F7E26A400D9577B /* Traverser */,
 				D617CCFE1F7B882C007AE919 /* Core */,
 				D617CCD41F7B4A2C007AE919 /* Validator */,
 				D63A2F171EF8CE15001765B3 /* AppDelegate.h */,
@@ -231,6 +241,22 @@
 				D63A2F301EF8CE15001765B3 /* Info.plist */,
 			);
 			path = TBVListAdapterManagerUITests;
+			sourceTree = "<group>";
+		};
+		D64735C01F7E26A400D9577B /* Traverser */ = {
+			isa = PBXGroup;
+			children = (
+				D64735C11F7E26A400D9577B /* TBVListAdapterManager+Traverser.h */,
+				D64735C21F7E26A400D9577B /* TBVListAdapterManager+Traverser.m */,
+				D64735C31F7E26A400D9577B /* TBVListItem+Traverser.h */,
+				D64735C41F7E26A400D9577B /* TBVListItem+Traverser.m */,
+				D64735C51F7E26A400D9577B /* TBVListItemBunch+Traverser.h */,
+				D64735C61F7E26A400D9577B /* TBVListItemBunch+Traverser.m */,
+				D64735C71F7E26A400D9577B /* TBVListSection+Traverser.h */,
+				D64735C81F7E26A400D9577B /* TBVListSection+Traverser.m */,
+				D64735C91F7E26A400D9577B /* TBVListTraversableProtocol.h */,
+			);
+			path = Traverser;
 			sourceTree = "<group>";
 		};
 		E7D80F642395840E7F1A3D79 /* Pods */ = {
