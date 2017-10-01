@@ -19,10 +19,12 @@ NS_SWIFT_NAME(ListSection)
 @interface TBVListSection : NSObject {
     @package
     __weak TBVListAdapterManager *_associatedManager;
+    __weak NSDictionary *_itemMapping;
 }
 
 @property (nullable, weak, nonatomic, readonly) TBVListAdapterManager *associatedManager;
 @property (nullable, strong, nonatomic, readonly) NSArray <TBVListItemBunch *> *itemBunches;
+@property (nullable, weak, nonatomic, readonly) NSDictionary *itemMapping;
 @property (assign, nonatomic, readonly) NSInteger index;
 
 @property (nullable, strong, nonatomic) TBVListSectionConfiguration *headerConfiguration;

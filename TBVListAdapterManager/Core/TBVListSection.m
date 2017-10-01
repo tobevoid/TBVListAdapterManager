@@ -105,6 +105,7 @@
     }
     
     bunch->_associatedSection = self;
+    bunch->_itemMapping = self.itemMapping;
     [self.mItemBunches addObject:bunch];
 }
 
@@ -128,6 +129,7 @@
     }
     
     bunch->_associatedSection = self;
+    bunch->_itemMapping = self.itemMapping;
     [self.mItemBunches insertObject:bunch atIndex:index];
 }
 

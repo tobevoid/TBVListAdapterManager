@@ -27,12 +27,15 @@ NS_SWIFT_NAME(ListItemBunch)
     @package
     __weak TBVListSection *_associatedSection;
     __weak id <TBVListItemBunchViewSource> _bunchViewSource;
+    __weak NSDictionary *_itemMapping;
 }
 
 @property (nullable, weak, nonatomic, readonly) TBVListSection *associatedSection;
 @property (nullable, strong, nonatomic, readonly) NSArray <TBVListItem *> *items;
+@property (nullable, weak, nonatomic, readonly) NSDictionary *itemMapping;
 @property (assign, nonatomic, readonly) NSInteger index;
 
+- (instancetype)initWithItem:(nullable TBVListItem *)item topInset:(CGFloat)topInset;
 - (instancetype)initWithItem:(nullable TBVListItem *)item;
 - (instancetype)initWithTopInset:(CGFloat)topInset;
 

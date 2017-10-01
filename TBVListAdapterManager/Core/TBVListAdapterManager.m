@@ -51,6 +51,7 @@
     NSParameterAssert(section);
     
     section->_associatedManager = self;
+    section->_itemMapping = self.itemMapping;
     NSInteger index = [self.mSections indexOfObject:aboveSection];
     if (index == NSNotFound) {
         [self.mSections addObject:section];
@@ -63,6 +64,7 @@
     NSParameterAssert(section);
     
     section->_associatedManager = self;
+    section->_itemMapping = self.itemMapping;
     [self.mSections insertObject:section atIndex:index];
 }
 
@@ -70,6 +72,7 @@
     NSParameterAssert(section);
 
     section->_associatedManager = self;
+    section->_itemMapping = self.itemMapping;
     [self.mSections addObject:section];
 }
 
@@ -111,7 +114,7 @@
         Class cellCls = NSClassFromString([realItem stringByAppendingString:@"Cell"]);
         itemCls = NSClassFromString([realItem stringByAppendingString:@"Item"]);
         
-        NSAssert(cellCls && itemCls, @"Can't find cell %@ or item %@", cellCls, itemCls);
+        NSAssert(cellCls && itemCls, @"can't find cell %@ or item %@", cellCls, itemCls);
         
         [self registerItem:itemCls withCell:cellCls];
     }

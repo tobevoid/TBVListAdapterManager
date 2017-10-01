@@ -18,28 +18,29 @@
 
 @implementation TBVListItemBunch
 #pragma mark - init
-- (instancetype)initWithTopInset:(CGFloat)topInset {
-    if (self = [self initWithItem:nil]) {
-        self.inset = UIEdgeInsetsMake(topInset, 0, 0, 0);
-    }
-    return self;
-}
-
-- (instancetype)initWithItem:(TBVListItem *)item {
+- (instancetype)initWithItem:(TBVListItem *)item topInset:(CGFloat)topInset {
     if (self = [super init]) {
         _mItems = [NSMutableArray array];
         if (item) {
             [self addItem:item];
         }
-        
+        self.inset = UIEdgeInsetsMake(topInset, 0, 0, 0);
         self.supplementaryViewSource = self;
     }
     
     return self;
 }
 
+- (instancetype)initWithTopInset:(CGFloat)topInset {
+    return [self initWithItem:nil topInset:topInset];
+}
+
+- (instancetype)initWithItem:(TBVListItem *)item {
+    return [self initWithItem:item topInset:0];
+}
+
 - (instancetype)init {
-    return [self initWithItem:nil];
+    return [self initWithItem:nil topInset:0];
 }
 
 #pragma mark - IGListSupplementaryViewSource
@@ -75,7 +76,7 @@
 
 - (UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index {
     TBVListItem *item = self.mItems[index];
-    Class cellClass = NSClassFromString(item.associatedBunch.associatedSection.associatedManager.itemMapping[NSStringFromClass([item class])]);
+    Class cellClass = NSClassFromString(self.itemMapping[NSStringFromClass([item class])]);
     
     NSAssert(cellClass && [cellClass conformsToProtocol:@protocol(TBVListCellProtocol)], @"can't find cell class for item %@ in %@ which conforms to TBVListCellProtocol", item, self.mItems);
     
