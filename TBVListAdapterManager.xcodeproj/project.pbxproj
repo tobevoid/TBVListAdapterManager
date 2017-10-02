@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		785F35C53980258683921963 /* libPods-TBVListAdapterManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A56154777B558BE5186FB96 /* libPods-TBVListAdapterManager.a */; };
+		BE7D3FBB1F820C80009DBD1B /* TBVListInlineValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7D3FBA1F820C80009DBD1B /* TBVListInlineValidator.m */; };
 		D617CCE81F7B4B89007AE919 /* TBVListValidationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CCE71F7B4B89007AE919 /* TBVListValidationItem.m */; };
 		D617CCEE1F7B5166007AE919 /* TBVListValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CCED1F7B5165007AE919 /* TBVListValidator.m */; };
 		D617CCF11F7B534E007AE919 /* TBVListAdapterManager+Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CCF01F7B534E007AE919 /* TBVListAdapterManager+Validator.m */; };
@@ -47,6 +48,8 @@
 /* Begin PBXFileReference section */
 		5A56154777B558BE5186FB96 /* libPods-TBVListAdapterManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TBVListAdapterManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F7153C2BBCCEC529702FF61 /* Pods-TBVListAdapterManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBVListAdapterManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TBVListAdapterManager/Pods-TBVListAdapterManager.debug.xcconfig"; sourceTree = "<group>"; };
+		BE7D3FB91F820C80009DBD1B /* TBVListInlineValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListInlineValidator.h; sourceTree = "<group>"; };
+		BE7D3FBA1F820C80009DBD1B /* TBVListInlineValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListInlineValidator.m; sourceTree = "<group>"; };
 		BF7019746A4D25EE38C6BDD0 /* Pods-TBVListAdapterManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBVListAdapterManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBVListAdapterManager/Pods-TBVListAdapterManager.release.xcconfig"; sourceTree = "<group>"; };
 		D617CCE61F7B4B89007AE919 /* TBVListValidationItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListValidationItem.h; sourceTree = "<group>"; };
 		D617CCE71F7B4B89007AE919 /* TBVListValidationItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListValidationItem.m; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 				D617CD1F1F7B89C8007AE919 /* TBVListMobileValidator.m */,
 				D617CD211F7B89E3007AE919 /* TBVListIdCardValidator.h */,
 				D617CD221F7B89E3007AE919 /* TBVListIdCardValidator.m */,
+				BE7D3FB91F820C80009DBD1B /* TBVListInlineValidator.h */,
+				BE7D3FBA1F820C80009DBD1B /* TBVListInlineValidator.m */,
 			);
 			path = Validator;
 			sourceTree = "<group>";
@@ -422,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D617CD0F1F7B8843007AE919 /* TBVListItemBunch.m in Sources */,
+				BE7D3FBB1F820C80009DBD1B /* TBVListInlineValidator.m in Sources */,
 				D617CD0C1F7B8843007AE919 /* TBVListAdapterManager.m in Sources */,
 				D617CCE81F7B4B89007AE919 /* TBVListValidationItem.m in Sources */,
 				D617CD0D1F7B8843007AE919 /* TBVListCell.m in Sources */,

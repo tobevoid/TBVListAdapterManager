@@ -8,6 +8,9 @@
 
 #import "TBVListValidator.h"
 
+NS_SWIFT_NAME(ListLengthValidator)
 @interface TBVListLengthValidator : TBVListValidator
-
+- (instancetype)initWithMin:(NSUInteger)min max:(NSUInteger)max;
+- (instancetype)initWithMax:(NSUInteger)max;
+- (instancetype)initWithMin:(NSUInteger)min;
 @end
