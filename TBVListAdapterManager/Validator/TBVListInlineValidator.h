@@ -8,7 +8,7 @@
 
 #import "TBVListValidator.h"
 
-
+NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(ListInlineValidationBlock)
 typedef NSString  * _Nullable (^TBVListInlineValidationBlock)(_Nullable id value,  NSString * _Nonnull name);
 NS_SWIFT_NAME(ListInlineValidator)
@@ -16,3 +16,4 @@ NS_SWIFT_NAME(ListInlineValidator)
 @property (copy, nonatomic, nonnull) NSString  * _Nullable (^validationBlock)(_Nullable id value,  NSString * _Nonnull name);
 - (instancetype)initWithValidationBlock:(nonnull TBVListInlineValidationBlock)validationBlock;
 @end
+NS_ASSUME_NONNULL_END
