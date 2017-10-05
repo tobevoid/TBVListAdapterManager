@@ -13,6 +13,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         _cellSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, 44.0f);
+        _enableSelection = YES;
     }
     
     return self;

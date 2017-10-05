@@ -25,6 +25,7 @@ NS_SWIFT_NAME(ListItem)
 @property (assign, nonatomic) CGSize cellSize;
 @property (assign, nonatomic, readonly) NSInteger index;
 @property (nullable, copy, nonatomic) TBVListItemSelectBlock selectBlock;
+@property (assign, nonatomic) BOOL enableSelection;
 
 - (void)reload;
 - (void)reloadAnimated:(BOOL)animated;

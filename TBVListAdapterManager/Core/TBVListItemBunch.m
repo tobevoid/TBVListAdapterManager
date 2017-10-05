@@ -102,7 +102,7 @@
 
 - (void)didSelectItemAtIndex:(NSInteger)index {
     TBVListItem *item = self.items[index];
-    if (item.selectBlock) {
+    if (item.selectBlock && item.enableSelection) {
         item.selectBlock(item);
     }
 }
