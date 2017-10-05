@@ -44,7 +44,7 @@
 }
 
 - (void)reload {
-    [self reloadAnimated:NO];
+    [self reloadAnimated:YES];
 }
 
 - (void)insertSection:(TBVListSection *)section above:(TBVListSection *)aboveSection {
