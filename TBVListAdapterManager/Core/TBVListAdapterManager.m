@@ -9,7 +9,6 @@
 #import "TBVListAdapterManager.h"
 
 @interface TBVListAdapterManager() <IGListAdapterDataSource>
-@property (strong, nonatomic, readonly) UIView *emptyView;
 @property (strong, nonatomic, readonly) NSMutableArray <TBVListSection *> *mSections;
 @property (strong, nonatomic) NSMutableDictionary <NSString *, NSString *> *mItemMapping;
 @property (strong, nonatomic) NSArray <TBVListItemBunch *> *itemBunches;

@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 __attribute__((objc_subclassing_restricted))
 NS_SWIFT_NAME(ListAdapterManager)
 @interface TBVListAdapterManager : NSObject
+@property (strong, nonatomic) UIView *emptyView;
 @property (nullable, strong, nonatomic, readonly) NSArray <TBVListSection *> *sections;
 @property (nullable, strong, nonatomic, readonly) IGListAdapter *adapter;
 @property (nullable, strong, nonatomic, readonly) NSDictionary *itemMapping;
