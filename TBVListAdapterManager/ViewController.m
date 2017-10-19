@@ -6,7 +6,7 @@
 //  Copyright © 2017年 tripleCC. All rights reserved.
 //
 #import "TBVListAdapterManager.h"
-
+#import "TBVListTelephoneValidator.h"
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSLog(@"%@", [[TBVListTelephoneValidator new] validateValue:@"010-86551122" name:@"asdf"]);
 }
 
 

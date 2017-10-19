@@ -26,6 +26,7 @@
 		D617CD1D1F7B8993007AE919 /* TBVListLengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CD1C1F7B8993007AE919 /* TBVListLengthValidator.m */; };
 		D617CD201F7B89C8007AE919 /* TBVListMobileValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CD1F1F7B89C8007AE919 /* TBVListMobileValidator.m */; };
 		D617CD231F7B89E3007AE919 /* TBVListIdCardValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D617CD221F7B89E3007AE919 /* TBVListIdCardValidator.m */; };
+		D62EF7C61F989F5A00B650BE /* TBVListTelephoneValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D62EF7C51F989F5A00B650BE /* TBVListTelephoneValidator.m */; };
 		D63A2F161EF8CE15001765B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A2F151EF8CE15001765B3 /* main.m */; };
 		D63A2F191EF8CE15001765B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A2F181EF8CE15001765B3 /* AppDelegate.m */; };
 		D63A2F1C1EF8CE15001765B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A2F1B1EF8CE15001765B3 /* ViewController.m */; };
@@ -88,6 +89,8 @@
 		D617CD1F1F7B89C8007AE919 /* TBVListMobileValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListMobileValidator.m; sourceTree = "<group>"; };
 		D617CD211F7B89E3007AE919 /* TBVListIdCardValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListIdCardValidator.h; sourceTree = "<group>"; };
 		D617CD221F7B89E3007AE919 /* TBVListIdCardValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListIdCardValidator.m; sourceTree = "<group>"; };
+		D62EF7C41F989F5A00B650BE /* TBVListTelephoneValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBVListTelephoneValidator.h; sourceTree = "<group>"; };
+		D62EF7C51F989F5A00B650BE /* TBVListTelephoneValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBVListTelephoneValidator.m; sourceTree = "<group>"; };
 		D63A2F111EF8CE15001765B3 /* TBVListAdapterManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBVListAdapterManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63A2F151EF8CE15001765B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D63A2F171EF8CE15001765B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 				D617CD1C1F7B8993007AE919 /* TBVListLengthValidator.m */,
 				D617CD1E1F7B89C8007AE919 /* TBVListMobileValidator.h */,
 				D617CD1F1F7B89C8007AE919 /* TBVListMobileValidator.m */,
+				D62EF7C41F989F5A00B650BE /* TBVListTelephoneValidator.h */,
+				D62EF7C51F989F5A00B650BE /* TBVListTelephoneValidator.m */,
 				D617CD211F7B89E3007AE919 /* TBVListIdCardValidator.h */,
 				D617CD221F7B89E3007AE919 /* TBVListIdCardValidator.m */,
 				BE7D3FB91F820C80009DBD1B /* TBVListInlineValidator.h */,
@@ -430,6 +435,7 @@
 				BE7D3FBB1F820C80009DBD1B /* TBVListInlineValidator.m in Sources */,
 				D617CD0C1F7B8843007AE919 /* TBVListAdapterManager.m in Sources */,
 				D617CCE81F7B4B89007AE919 /* TBVListValidationItem.m in Sources */,
+				D62EF7C61F989F5A00B650BE /* TBVListTelephoneValidator.m in Sources */,
 				D617CD0D1F7B8843007AE919 /* TBVListCell.m in Sources */,
 				D617CD111F7B8843007AE919 /* TBVListSectionConfiguration.m in Sources */,
 				D63A2F1C1EF8CE15001765B3 /* ViewController.m in Sources */,
