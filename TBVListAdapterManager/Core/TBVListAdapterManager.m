@@ -8,7 +8,7 @@
 
 #import "TBVListAdapterManager.h"
 
-@interface TBVListAdapterManager() <IGListAdapterDataSource>
+@interface TBVListAdapterManager() <IGListAdapterDataSource, UICollectionViewDelegate>
 @property (strong, nonatomic, readonly) NSMutableArray <TBVListSection *> *mSections;
 @property (strong, nonatomic) NSMutableDictionary <NSString *, NSString *> *mItemMapping;
 @property (strong, nonatomic) NSArray <TBVListItemBunch *> *itemBunches;
@@ -24,7 +24,7 @@
     if (self = [super init]) {
         _adapter = adapter;
         _adapter.dataSource = self;
-        
+        _adapter.collectionViewDelegate = self;
         _mSections = [NSMutableArray array];
         _mItemMapping = [NSMutableDictionary dictionary];
     }
@@ -153,6 +153,11 @@
 
 - (UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
     return self.emptyView;
+}
+
+#pragma mark - UICollectionViewDelegate
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
 }
 
 #pragma mark - getter

@@ -14,6 +14,8 @@
     if (self = [super init]) {
         _cellSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, 44.0f);
         _enableSelection = YES;
+        _backgroundColor = [UIColor whiteColor];
+        _selectionStyle = TBVListCellSelectionStyleGray;
     }
     
     return self;

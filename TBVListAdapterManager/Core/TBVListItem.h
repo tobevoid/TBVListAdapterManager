@@ -15,6 +15,12 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(ListItemSelectBlock)
 typedef void (^TBVListItemSelectBlock)(TBVListItem * _Nonnull item);
 
+NS_SWIFT_NAME(ListCellSelectionStyle)
+typedef NS_ENUM(NSInteger, TBVListCellSelectionStyle) {
+    TBVListCellSelectionStyleNone,
+    TBVListCellSelectionStyleGray,
+};
+
 NS_SWIFT_NAME(ListItem)
 @interface TBVListItem : NSObject {
     @package
@@ -26,6 +32,8 @@ NS_SWIFT_NAME(ListItem)
 @property (assign, nonatomic, readonly) NSInteger index;
 @property (nullable, copy, nonatomic) TBVListItemSelectBlock selectBlock;
 @property (assign, nonatomic) BOOL enableSelection;
+@property (nullable, strong, nonatomic) UIColor *backgroundColor;
+@property (assign, nonatomic) TBVListCellSelectionStyle selectionStyle;
 
 - (void)reload;
 - (void)reloadAnimated:(BOOL)animated;

@@ -101,6 +101,8 @@
 }
 
 - (void)didSelectItemAtIndex:(NSInteger)index {
+    [self.collectionContext deselectItemAtIndex:index sectionController:self animated:YES];
+    
     TBVListItem *item = self.items[index];
     if (item.selectBlock && item.enableSelection) {
         item.selectBlock(item);
